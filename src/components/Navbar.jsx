@@ -13,7 +13,7 @@ const Navbar = () => {
     return (
       <section className='bg-black'>
         <nav className="font-Roboto flex justify-between siteContainer">
-            <a href="#" className='font-Logo text-white text-3xl pt-5 pb-5 pr-5'>Local Buzz Brewing</a>
+            <a href="#" className='font-Logo text-white text-3xl pt-8 pb-8 pr-5'>Local Buzz Brewing</a>
 
             <button onClick={handleNav} className='z-50 text-white md:max-xl:hidden lg:hidden xl:hidden 2xl:hidden'>
                 {!nav ? <AiOutlineMenu size={40} /> : <AiOutlineClose size={40} />}
@@ -32,12 +32,12 @@ const Navbar = () => {
             </div>
 
             <div id='desktop' className='hidden md:block'>
-            <ul className='flex text-white pt-5 pb-5'>
+            <ul className='flex text-white pt-8 pb-8'>
                 <li><a href="#">Home</a></li>
-                <li className='ml-8'><a href="#">Beers</a></li>
-                <li className='ml-8'><a href="#">Events</a></li>
-                <li className='ml-8'><a href="#">Rhythm & Blues</a></li>
-                <li className='ml-8'><a href="#">Contact</a></li>
+                <li className='ml-10'><a href="#">Beers</a></li>
+                <li className='ml-10'><a href="#">Events</a></li>
+                <li className='ml-10'><a href="#">Rhythm & Blues</a></li>
+                <li className='ml-10'><a href="#">Contact</a></li>
             </ul>
             </div>
         </nav>

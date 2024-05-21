@@ -3,8 +3,8 @@ import React from 'react'
 function Carousel() {
   return (
     <section>
-        <div id='carousel' className='bg-black'>
-            <p className='text-white'>TESTING</p>
+        <div id='carousel' className='bg-black flex'>
+            <img src="src/assets/33_carousel_beer.png" alt="" />
         </div>
     </section>
   )
