@@ -16,16 +16,12 @@ function Header() {
                   <div className="text">Staff</div>
               </div>
               <div className="result p-4 ">
-                  <div className="number text-4xl font-bold">1M</div>
-                  <div className="text">Gallons of Beer</div>
-              </div>
-              <div className="result p-4 ">
                   <div className="number text-4xl font-bold">9</div>
                   <div className="text">Awards</div>
               </div>
-              <div className="result p-4">
-                  <div className="number text-4xl font-bold">55K</div>
-                  <div className="text">Charity</div>
+              <div className="beer result p-4 col-start-1 col-end-6">
+                  <div className="number text-4xl font-bold">1,085,00</div>
+                  <div className="text">Gallons of Beer</div>
               </div>
           </div>
         </section>
