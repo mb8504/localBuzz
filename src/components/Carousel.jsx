@@ -55,7 +55,7 @@ const Carousel = () => {
           Featured Beers
         </div>
         <div className="relative overflow-hidden">
-          <div className="flex justify-between absolute top left w-full h-full">
+          <div className="flex justify-between absolute top-0 left-0 w-full h-full">
             <button
               onClick={movePrev}
               className="hover:bg-slate-700/75 text-white w-10 h-full text-center opacity-75 hover:opacity-100 disabled:opacity-25 disabled:cursor-not-allowed z-10 p-0 m-0 transition-all ease-in-out duration-300"
@@ -80,7 +80,7 @@ const Carousel = () => {
             {data.resources.map((resource, index) => (
               <div
                 key={index}
-                className="carousel-item flex-shrink-0 w-full md:w-1/2 lg:w-1/4 text-center h-94 snap-start"
+                className="carousel-item flex-shrink-0 w-full md:w-1/2 lg:w-1/4 text-center h-94 snap-start relative"
               >
                 <a
                   href={resource.link}
@@ -95,7 +95,7 @@ const Carousel = () => {
                 </a>
                 <a
                   href={resource.link}
-                  className="h-full w-full aspect-square block absolute top-0 left-0 transition-opacity duration-300 opacity-0 hover:opacity-100 hover:bg-slate-700/75 z-10"
+                  className="absolute inset-0 transition-opacity duration-300 opacity-0 hover:opacity-100 hover:bg-slate-700/75 z-10 flex items-center justify-center"
                 >
                   <h3 className="text-white py-6 px-3 mx-auto text-xl">
                     {resource.title}
