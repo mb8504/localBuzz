@@ -33,11 +33,10 @@ const Navbar = () => {
 
             <div id='desktop' className='hidden md:block'>
             <ul className='flex text-white pt-8 pb-8'>
-                <li><a href="#">Home</a></li>
-                <li className='ml-10'><a href="#">Beers</a></li>
-                <li className='ml-10'><a href="#">Events</a></li>
-                <li className='ml-10'><a href="#">Rhythm & Blues</a></li>
-                <li className='ml-10'><a href="#">Contact</a></li>
+                <li className='hover:text-orange'><a href="#">Home</a></li>
+                <li className='ml-10 hover:text-orange'><a href="#">Beers</a></li>
+                <li className='ml-10 hover:text-orange'><a href="#">Rhythm & Blues</a></li>
+                <li className='ml-10 hover:text-orange'><a href="#">Contact</a></li>
             </ul>
             </div>
         </nav>
