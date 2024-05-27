@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import Navbar from './components/Navbar'
 import Header from './components/Header'
 import Carousel from './components/Carousel'
+import Hops from './components/Hops'
 
 const App = () => {
 
@@ -12,6 +13,7 @@ const App = () => {
       <Navbar />
       <Header />
       <Carousel />
+      <Hops />
       <div>
         testing
       </div>
