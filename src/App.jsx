@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import Header from './components/Header'
 import Carousel from './components/Carousel'
 import Hops from './components/Hops'
+import Cards from './components/Cards'
 
 const App = () => {
 
@@ -14,6 +15,7 @@ const App = () => {
       <Header />
       <Carousel />
       <Hops />
+      <Cards />
       <div>
         testing
       </div>
