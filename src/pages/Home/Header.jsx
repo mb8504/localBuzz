@@ -25,7 +25,7 @@ const Counter = ({ target }) => {
 function Header() {
   return (
     <>
-      <img className='w-full' src="src/assets/hero.png" alt="Hero" />
+      <img className='w-full' src="src/assets/Home/hero.png" alt="Hero" />
       <div className='bg-black pt-8 pb-8'>
         <section className="siteContainer">
           <div className="text-white grid grid-cols-3 md:flex justify-between text-center">

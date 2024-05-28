@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import data from './data.json';
+import data from '../../data/data.json';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 
 const Carousel = () => {
@@ -49,7 +49,7 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="bg-black pb-14">
+    <div className="bg-black pb-28 pt-28">
       <div className="siteContainer carousel my-12 mx-auto">
         <div className="text-[#F0840A] text-4xl pb-12">
           Featured Beers
