@@ -114,7 +114,7 @@ const Hops = () => {
   return (
     <section className="bg-black pt-14">
       <div className="siteContainer text-white flex flex-col items-center">
-        <p className="text-lg text-center pb-28">
+        <p className="text-3xl text-center pb-28">
           Looking for something with a little extra hop?
           <br />
           Click the hop drops to explore some of the local hops featured in our upcoming releases.

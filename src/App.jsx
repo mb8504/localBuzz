@@ -6,6 +6,8 @@ import Header from '../src/pages/Home/Header'
 import Carousel from '../src/pages/Home/Carousel'
 import Hops from '../src/pages/Home/Hops'
 import Cards from '../src/pages/Home/Cards'
+import Newsletter from './components/Newsletter'
+import Footer from './components/Footer'
 
 const App = () => {
 
@@ -16,9 +18,8 @@ const App = () => {
       <Carousel />
       <Hops />
       <Cards />
-      <div>
-        testing
-      </div>
+      <Newsletter />
+      <Footer />
     </>
   )
 }
