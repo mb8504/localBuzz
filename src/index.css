@@ -5,6 +5,7 @@
 @tailwind utilities;
 
 
+
 .siteContainer {
     max-width: 1240px;
     margin: 0 auto;
@@ -12,3 +13,25 @@
     align-items: center;
 }
 
+
+@media (min-width: 845px) {
+    .stats {
+        display: flex;
+    }
+}
+
+@media (min-width: 990px) {
+    .footerWrap {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        text-align: left;
+    }
+}
+
+@media (min-width: 990px) {
+    .footerLinks {
+        margin-right: 7rem;
+        margin-bottom: 0;
+    }
+}

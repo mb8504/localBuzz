@@ -28,7 +28,7 @@ function Header() {
       <img className='w-full' src="src/assets/Home/hero.png" alt="Hero" />
       <div className='bg-black pt-8 pb-8'>
         <section className="siteContainer">
-          <div className="text-white grid grid-cols-3 md:flex justify-between text-center">
+          <div className="text-white grid grid-cols-3 stats justify-between text-center">
             <div className="result p-4 col-start-1 col-end-6">
               <div className="number text-4xl font-bold">
                 <Counter target={7} />
