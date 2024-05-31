@@ -23,11 +23,11 @@ const Footer = () => {
             </div>
         </div>
         <div className='siteContainer text-white'>
-            <div className='pt-8 md:text-left'>
-                <ul className='text-sm flex md:flex-row md:justify-start justify-center'>
-                    <li>&copy; 2024 Local Buzz Brewing</li>
-                    <li>Legal</li>
-                    <li>Privacy</li>
+            <div className='pt-4'>
+                <ul className='text-sm text-center bottomText'>
+                    <li className='bottomText'>&copy; 2024 Local Buzz Brewing</li>
+                    <li className='bottomText'>Legal</li>
+                    <li className='bottomText'>Privacy</li>
                     <li>Cookies</li>
                 </ul>
             </div>
@@ -37,3 +37,15 @@ const Footer = () => {
 }
 
 export default Footer
+
+
+{/* <div className='siteContainer text-white'>
+<div className='pt-8 md:text-left'>
+    <ul className='text-sm flex md:flex-row md:justify-start justify-center'>
+        <li>&copy; 2024 Local Buzz Brewing</li>
+        <li>Legal</li>
+        <li>Privacy</li>
+        <li>Cookies</li>
+    </ul>
+</div>
+</div> */}

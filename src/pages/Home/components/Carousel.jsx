@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import data from '../../data/data.json';
+import data from '../../../data/data.json';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 
 const Carousel = () => {

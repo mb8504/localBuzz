@@ -4,8 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 .siteContainer {
     max-width: 1240px;
     margin: 0 auto;
@@ -13,13 +11,14 @@
     align-items: center;
 }
 
-
+/* for header stats on homepage */
 @media (min-width: 845px) {
     .stats {
         display: flex;
     }
 }
 
+/* for footer globally */
 @media (min-width: 990px) {
     .footerWrap {
         display: flex;
@@ -29,9 +28,19 @@
     }
 }
 
+/* for footer globally */
 @media (min-width: 990px) {
     .footerLinks {
         margin-right: 7rem;
         margin-bottom: 0;
+    }
+}
+
+/* for footer globally */
+@media (min-width: 990px) {
+    .bottomText {
+        text-align: left;
+        display: flex;
+        margin-right: 2rem;
     }
 }
