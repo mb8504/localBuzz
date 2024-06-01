@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
+import { BrowserRouter, Routes, Route, Link, NavLink } from 'react-router-dom'; 
 
 const Navbar = () => {
  // I want React to remember nav. Initial value of your state is set to false.
@@ -13,7 +14,8 @@ const Navbar = () => {
     return (
       <section className='bg-black'>
         <nav className="font-Roboto flex justify-between siteContainer">
-            <a href="#" className='font-Logo text-white text-4xl pt-8 pb-8 pr-5'>Local Buzz Brewing</a>
+            <NavLink className='font-Logo text-white text-4xl pt-8 pb-8 pr-5' to='/'>Local Buzz Brewing</NavLink>
+            {/* <a href="#" className='font-Logo text-white text-4xl pt-8 pb-8 pr-5'>Local Buzz Brewing</a> */}
 
             <button onClick={handleNav} className='z-50 text-white md:max-xl:hidden lg:hidden xl:hidden 2xl:hidden'>
                 {!nav ? <AiOutlineMenu size={40} /> : <AiOutlineClose size={40} />}
@@ -32,10 +34,10 @@ const Navbar = () => {
 
             <div id='desktop' className='hidden md:block'>
             <ul className='flex text-white pt-8 pb-8 text-lg'>
-                <li className='hover:text-orange'><a href="#">Home</a></li>
-                <li className='ml-10 hover:text-orange'><a href="#">Beers</a></li>
-                <li className='ml-10 hover:text-orange'><a href="#">Locals Only</a></li>
-                <li className='ml-10 hover:text-orange'><a href="#">Contact</a></li>
+                <NavLink className='ml-10 hover:text-orange' to='/'>Home</NavLink>
+                <NavLink className='ml-10 hover:text-orange' to='/beers'>Beers</NavLink>
+                <NavLink className='ml-10 hover:text-orange' to='/locals-only'>Locals Only</NavLink>
+                <NavLink className='ml-10 hover:text-orange' to='/contact'>Contact</NavLink>
             </ul>
             </div>
         </nav>
