@@ -1,12 +1,9 @@
-import Navbar from '../../components/Navbar'
-import Footer from '../../components/Footer'
 import Newsletter from '../../components/Newsletter'
 
 const Beers = () => {
 
   return (
     <>
-      <Navbar />
       <section className='siteContainer'>
         <h1 className='text-6xl text-center font-bold pt-8'>BEERS</h1>
         <p className='text-center pb-8'>
@@ -63,29 +60,7 @@ const Beers = () => {
           </div>
         </div>
       </section>
-
-      {/* <section className="newsletter bg-black pb-28 pt-28">
-        <div className="siteContainer">
-            <div className="text-white text-6xl pb-12 text-center md:text-left mb-28">
-            Get updates, homebrew recipes, and special offers from your neighborhood brewery.
-            </div>
-            
-            <div className='flex flex-row justify-between border-b-2 border-white pb-1 md:justify-end md:border-none'>
-                <form className='md:border-b-2' action="#" method="POST">
-                    <div className="text-2xl text-center">
-                        <input className='bg-black text-white outline-none' type="email" name="email" placeholder="Drop your email here!" />
-                    </div>
-                </form>
-                <button className="md:border-b-2 text-white">
-                    Send
-                </button>
-            </div>
-        </div>
-      </section> */}
-
-      <Newsletter />
-      <Footer />
-      
+      <Newsletter />    
     </>
   )
 }

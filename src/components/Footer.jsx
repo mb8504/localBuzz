@@ -1,4 +1,5 @@
 import React from 'react'
+import {  NavLink } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -6,20 +7,20 @@ const Footer = () => {
         <div className='siteContainer flex flex-col footerWrap text-white'>
             <div className='flex flex-col text-center footerWrap'>
                 <ul className='footerLinks mb-8 uppercase text-xl'>
-                    <li>Home</li>
-                    <li>Beers</li>
-                    <li>Locals Only</li>
-                    <li>Contact</li>
+                    <li><NavLink className='hover:text-orange' to='/'>Home</NavLink></li>
+                    <li><NavLink className='hover:text-orange' to='/beers'>beers</NavLink></li>
+                    <li><NavLink className='hover:text-orange' to='/locals-only'>locals only</NavLink></li>
+                    <li><NavLink className='hover:text-orange' to='/contact'>contact</NavLink></li>
                 </ul>
                 <ul className='uppercase text-xl'>
-                    <li>TikTok</li>
-                    <li>Facebook</li>
-                    <li>Instagram</li>
-                    <li>YouTube</li>
+                    <li><NavLink className='hover:text-orange' to='#'>TIKTOK</NavLink></li>
+                    <li><NavLink className='hover:text-orange' to='#'>facebook</NavLink></li>
+                    <li><NavLink className='hover:text-orange' to='#'>instagram</NavLink></li>
+                    <li><NavLink className='hover:text-orange' to='#'>youtube</NavLink></li>
                 </ul>
             </div>
             <div className='font-Logo text-white text-4xl pt-20 text-center md:text-left '>
-                Local Buzz Brewing
+            <NavLink to='/'>Local Buzz Brewing</NavLink>
             </div>
         </div>
         <div className='siteContainer text-white'>

@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
+import {  NavLink } from 'react-router-dom';
 
 const Navbar = () => {
  // I want React to remember nav. Initial value of your state is set to false.
@@ -32,10 +33,10 @@ const Navbar = () => {
 
             <div id='desktop' className='hidden md:block'>
             <ul className='flex text-white pt-8 pb-8 text-lg'>
-                <li className='hover:text-orange'><a href="#">Home</a></li>
-                <li className='ml-10 hover:text-orange'><a href="#">Beers</a></li>
-                <li className='ml-10 hover:text-orange'><a href="#">Locals Only</a></li>
-                <li className='ml-10 hover:text-orange'><a href="#">Contact</a></li>
+                <NavLink className='hover:text-orange' to='/'>Home</NavLink>
+                <NavLink className='ml-10 hover:text-orange' to='/beers'>Beers</NavLink>
+                <NavLink className='ml-10 hover:text-orange' to='/locals-only'>Locals Only</NavLink>
+                <NavLink className='ml-10 hover:text-orange' to='/contact'>Contact</NavLink>
             </ul>
             </div>
         </nav>
