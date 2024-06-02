@@ -1,5 +1,6 @@
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
+import Newsletter from '../../components/Newsletter'
 
 const Beers = () => {
 
@@ -63,7 +64,7 @@ const Beers = () => {
         </div>
       </section>
 
-      <section className="bg-black pb-28 pt-28">
+      {/* <section className="newsletter bg-black pb-28 pt-28">
         <div className="siteContainer">
             <div className="text-white text-6xl pb-12 text-center md:text-left mb-28">
             Get updates, homebrew recipes, and special offers from your neighborhood brewery.
@@ -80,7 +81,9 @@ const Beers = () => {
                 </button>
             </div>
         </div>
-      </section>
+      </section> */}
+
+      <Newsletter />
       <Footer />
       
     </>

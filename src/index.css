@@ -44,3 +44,36 @@
         margin-right: 2rem;
     }
 }
+
+#svgDiv {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 12rem;
+    transition: all 1s ease;
+}
+
+@keyframes dash {
+    0% {
+      stroke-dasharray: 0, 280;
+      stroke-dashoffset: 0;
+    }
+    50% {
+      stroke-dasharray: 100, 200;
+      stroke-dashoffset: -50;
+    }
+    100% {
+      stroke-dasharray: 100, 200;
+      stroke-dashoffset: -200;
+    }
+  }
+  
+  .path {
+    stroke: #FFE818;
+    stroke-width: 3;
+    fill: none;
+  }
+  
+  .animate {
+    animation: dash 1s linear;
+  }
+  
