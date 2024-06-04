@@ -23,10 +23,10 @@ const Navbar = () => {
             <div id='mobile' className={!nav ? 'fixed right-[-100%]' : 'fixed right-0 top-0 w-[100%] h-full bg-black bg-opacity-90'}>
 
             <ul className='flex flex-col text-white text-lg text-center font-bold'>
-                <li className='mt-20 pt-8'><a href="#">Home</a></li>
-                <li className='mt-8'><a href="#">Beers</a></li>
-                <li className='mt-8'><a href="#">Locals Only</a></li>
-                <li className='mt-8'><a href="#">Contact</a></li>
+                <NavLink className='hover:text-orange mt-20 pt-8' to='/'>Home</NavLink>
+                <NavLink className='hover:text-orange mt-8' to='/beers'>Beers</NavLink>
+                <NavLink className='mt-8 hover:text-orange' to='/locals-only'>Locals Only</NavLink>
+                <NavLink className='mt-8 hover:text-orange' to='/contact'>Contact</NavLink>
             </ul>
 
             </div>
