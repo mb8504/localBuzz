@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Fade from 'react-reveal/Fade'
+// import Fade from 'react-reveal/Fade'
 
 const GreenHop = () => <img src="src/assets/Home/greenhops.png" alt="Green Hop" className="h-40 w-28" />;
 const WhiteHop = () => <img src="src/assets/Home/whitehops.png" alt="White Hop" className="h-40 w-28 animate-bounce" />;
@@ -38,7 +38,7 @@ const Hops = () => {
         <div className="mt-2 text-center">
           {color && (
             <>
-              <Fade>
+              {/* <Fade> */}
                 <h2 className="text-white text-2xl underline pb-1 duration-700" >Citra</h2>
                 <p className="text-white duration-700">
                   A dual-purpose hop with a floral, citrusy, tropical fruit aroma and flavor that's often used in IPAs and pale ales.
@@ -48,7 +48,7 @@ const Hops = () => {
                 <p className="text-white duration-700">
                   Try "The Hoppy Farmer" for a burst of Citra. On tap and in cans.
                 </p>
-              </Fade>
+              {/* </Fade> */}
             </>
           )}
         </div>
@@ -66,7 +66,7 @@ const Hops = () => {
         <div className="mt-2 text-center">
           {color2 && (
             <>
-              <Fade>
+              {/* <Fade> */}
                 <h2 className="text-white text-2xl underline pb-1 duration-700" >Simcoe</h2>
                 <p className="text-white duration-700">
                   Simcoe hops can add flavors and aromas of grapefruit, pine, and citrus to IPAs, double IPAs, American pale ales, wheat beers, and amber ales.
@@ -76,7 +76,7 @@ const Hops = () => {
                 <p className="text-white duration-700">
                   "Hazy With A Chance of Hops" is sure to leave your taste buds hopping for more! On tap and in cans.
                 </p>
-              </Fade>
+              {/* </Fade> */}
             </>
           )}
         </div>
@@ -93,7 +93,7 @@ const Hops = () => {
         <div className="mt-2 text-center">
           {color3 && (
             <>
-              <Fade>
+              {/* <Fade> */}
                 <h2 className="text-white text-2xl underline pb-1 duration-700" >Mosaic</h2>
                 <p className="text-white duration-700">
                   A nice blend of tropical, fruity, and earthy flavors. Also known for it's cutrus, grassy, blueberry aromas. 
@@ -103,7 +103,7 @@ const Hops = () => {
                 <p className="text-white duration-700">
                   Our double dry hopped juicy hazy NE IPA "Hazed and Confused" will quench your thirst with a blast of Citra and Mosaic hops. Draft only.
                 </p>
-              </Fade>
+              {/* </Fade> */}
             </>
           )}
         </div>
