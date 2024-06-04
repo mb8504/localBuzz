@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Beers from './pages/Beers';
 import Locals from './pages/Locals';
 import Footer from './components/Footer';
+import Contact from './pages/Contact';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="beers" element={<Beers />} />
         <Route path="locals-only" element={<Locals />} />
+        <Route path="contact" element={<Contact />} />
       </Routes>
       <Footer/>
     </BrowserRouter>

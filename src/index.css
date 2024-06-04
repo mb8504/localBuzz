@@ -76,4 +76,13 @@
   .animate {
     animation: dash 1s linear;
   }
-  
+
+  /* Contact Page */
+#name {
+  /* width: 250px; */
+  font-size: 1.4rem;
+}
+
+#message {
+  font-size: 1.4rem;
+}
