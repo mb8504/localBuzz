@@ -2,30 +2,29 @@ import React, { useEffect, useState } from 'react';
 
 const Counter = ({ target }) => {
   const [count, setCount] = useState(0);
-  const speed = 12000; // The lower the slower
+  const duration = 2000; // Duration in milliseconds for the counter to reach the target
 
   useEffect(() => {
-    const updateCount = () => {
-      const inc = target / speed;
-      setCount((prevCount) => {
-        if (prevCount < target) {
-          setTimeout(updateCount, 10); // Increase the timeout to make the updates less frequent
-          return prevCount + inc;
-        }
-        return target;
-      });
+    const start = performance.now();
+    const updateCount = (currentTime) => {
+      const progress = currentTime - start;
+      const increment = Math.min(progress / duration, 1) * target;
+      setCount(Math.ceil(increment));
+      if (progress < duration) {
+        requestAnimationFrame(updateCount);
+      }
     };
 
-    updateCount();
-  }, [target]);
+    requestAnimationFrame(updateCount);
+  }, [target, duration]);
 
-  return <div>{Math.ceil(count).toLocaleString()}</div>;
+  return <div>{count.toLocaleString()}</div>;
 };
 
 function Header() {
   return (
     <>
-      <img className='w-full' src="src/assets/Home/hero.png" alt="Hero" />
+      <img className='w-full' src="/hero.png" alt="Hero" />
       <div className='bg-black pt-8 pb-8'>
         <section className="siteContainer">
           <div className="text-white grid grid-cols-3 stats justify-between text-center">

@@ -13,19 +13,19 @@ const Beers = () => {
         <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
         <div className='lagers flex justify-center pb-2'>
           <div className='grid grid-cols-2 md:grid-cols-4 gap-2'>
-            <img src="src/assets/Home/33_carousel_beer.png" alt="" />
-            <img src="src/assets/Home/33_carousel_beer.png" alt="" />
-            <img src="src/assets/Home/33_carousel_beer.png" alt="" />
-            <img src="src/assets/Home/33_carousel_beer.png" alt="" />
+            <img src="/33_carousel_beer.png" alt="" />
+            <img src="/33_carousel_beer.png" alt="" />
+            <img src="/33_carousel_beer.png" alt="" />
+            <img src="/33_carousel_beer.png" alt="" />
           </div>
         </div>
 
         <div className='lagers flex justify-center pb-2'>
           <div className='grid grid-cols-2 md:grid-cols-4 gap-2'>
-            <img src="src/assets/Home/33_carousel_beer.png" alt="" />
-            <img src="src/assets/Home/33_carousel_beer.png" alt="" />
-            <img src="src/assets/Home/33_carousel_beer.png" alt="" />
-            <img src="src/assets/Home/33_carousel_beer.png" alt="" />
+            <img src="/33_carousel_beer.png" alt="" />
+            <img src="/33_carousel_beer.png" alt="" />
+            <img src="/33_carousel_beer.png" alt="" />
+            <img src="/33_carousel_beer.png" alt="" />
           </div>
         </div>
 
@@ -33,19 +33,19 @@ const Beers = () => {
         <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
         <div className='ipas flex justify-center pb-2'>
           <div className='grid grid-cols-2 md:grid-cols-4 gap-2'>
-            <img src="src/assets/Home/33_carousel_beer.png" alt="" />
-            <img src="src/assets/Home/33_carousel_beer.png" alt="" />
-            <img src="src/assets/Home/33_carousel_beer.png" alt="" />
-            <img src="src/assets/Home/33_carousel_beer.png" alt="" />
+            <img src="/33_carousel_beer.png" alt="" />
+            <img src="/33_carousel_beer.png" alt="" />
+            <img src="/33_carousel_beer.png" alt="" />
+            <img src="/33_carousel_beer.png" alt="" />
           </div>
         </div>
 
         <div className='ipas flex justify-center'>
           <div className='grid grid-cols-2 md:grid-cols-4 gap-2'>
-            <img src="src/assets/Home/33_carousel_beer.png" alt="" />
-            <img src="src/assets/Home/33_carousel_beer.png" alt="" />
-            <img src="src/assets/Home/33_carousel_beer.png" alt="" />
-            <img src="src/assets/Home/33_carousel_beer.png" alt="" />
+            <img src="/33_carousel_beer.png" alt="" />
+            <img src="/33_carousel_beer.png" alt="" />
+            <img src="/33_carousel_beer.png" alt="" />
+            <img src="/33_carousel_beer.png" alt="" />
           </div>
         </div>
 
@@ -53,10 +53,10 @@ const Beers = () => {
         <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
         <div className='stouts flex justify-center pb-2'>
           <div className='grid grid-cols-2 md:grid-cols-4 gap-2'>
-            <img src="src/assets/Home/33_carousel_beer.png" alt="" />
-            <img src="src/assets/Home/33_carousel_beer.png" alt="" />
-            <img src="src/assets/Home/33_carousel_beer.png" alt="" />
-            <img src="src/assets/Home/33_carousel_beer.png" alt="" />
+            <img src="/33_carousel_beer.png" alt="" />
+            <img src="/33_carousel_beer.png" alt="" />
+            <img src="/33_carousel_beer.png" alt="" />
+            <img src="/33_carousel_beer.png" alt="" />
           </div>
         </div>
       </section>

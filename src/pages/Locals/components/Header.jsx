@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 function Header() {
   return (
     <>
-        <img className='w-full' src="src/assets/Locals/locals.png" alt="" />
+        <img className='w-full' src="/locals.png" alt="" />
         <section className='siteContainer'>
             <div className='flex flex-col md:flex-row md:justify-between mt-28 mb-28'>
                 <div className='md:w-1/2'>
@@ -23,7 +23,7 @@ function Header() {
                     </ul>
                 </div>
                 <div className='md:w-auto'>
-                    <img className='w-full h-auto md:max-w-xs lg:max-w-sm' src="src/assets/Locals/cheers2.png" alt="Cheers" />
+                    <img className='w-full h-auto md:max-w-xs lg:max-w-sm' src="/cheers2.png" alt="Cheers" />
                 </div>
             </div>
         </section>

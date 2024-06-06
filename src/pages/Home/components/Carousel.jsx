@@ -1,52 +1,45 @@
 import React, { useState, useRef, useEffect } from 'react';
-import data from '../../../data/data.json';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 
 const Carousel = () => {
-  const maxScrollWidth = useRef(0);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [resources, setResources] = useState([]);
   const carousel = useRef(null);
+  const maxScrollWidth = useRef(0);
+
+  useEffect(() => {
+    fetch('/data.json')
+      .then(response => response.json())
+      .then(data => setResources(data.resources))
+      .catch(error => console.error('Error fetching data:', error));
+  }, []);
 
   const movePrev = () => {
     if (currentIndex > 0) {
-      setCurrentIndex((prevState) => prevState - 1);
+      setCurrentIndex(prevIndex => prevIndex - 1);
     }
   };
 
   const moveNext = () => {
     if (
-      carousel.current !== null &&
-      carousel.current.offsetWidth * currentIndex <= maxScrollWidth.current
+      carousel.current &&
+      (currentIndex + 1) * carousel.current.offsetWidth <= maxScrollWidth.current
     ) {
-      setCurrentIndex((prevState) => prevState + 1);
+      setCurrentIndex(prevIndex => prevIndex + 1);
     }
-  };
-
-  const isDisabled = (direction) => {
-    if (direction === 'prev') {
-      return currentIndex <= 0;
-    }
-
-    if (direction === 'next' && carousel.current !== null) {
-      return (
-        carousel.current.offsetWidth * currentIndex >= maxScrollWidth.current
-      );
-    }
-
-    return false;
   };
 
   useEffect(() => {
-    if (carousel !== null && carousel.current !== null) {
+    if (carousel.current) {
       carousel.current.scrollLeft = carousel.current.offsetWidth * currentIndex;
     }
   }, [currentIndex]);
 
   useEffect(() => {
-    maxScrollWidth.current = carousel.current
-      ? carousel.current.scrollWidth - carousel.current.offsetWidth
-      : 0;
-  }, []);
+    if (carousel.current) {
+      maxScrollWidth.current = carousel.current.scrollWidth - carousel.current.offsetWidth;
+    }
+  }, [resources]);
 
   return (
     <div className="bg-black pb-28 pt-28">
@@ -59,7 +52,7 @@ const Carousel = () => {
             <button
               onClick={movePrev}
               className="hover:bg-slate-700/75 text-white w-10 h-full text-center opacity-75 hover:opacity-100 disabled:opacity-25 disabled:cursor-not-allowed z-10 p-0 m-0 transition-all ease-in-out duration-300"
-              disabled={isDisabled('prev')}
+              disabled={currentIndex <= 0}
             >
               <BsChevronCompactLeft className="h-12 w-20 -ml-5" />
               <span className="sr-only">Prev</span>
@@ -67,7 +60,7 @@ const Carousel = () => {
             <button
               onClick={moveNext}
               className="hover:bg-slate-700/75 text-white w-10 h-full text-center opacity-75 hover:opacity-100 disabled:opacity-25 disabled:cursor-not-allowed z-10 p-0 m-0 transition-all ease-in-out duration-300"
-              disabled={isDisabled('next')}
+              disabled={currentIndex >= resources.length - 1}
             >
               <BsChevronCompactRight className="h-12 w-20 -ml-5" />
               <span className="sr-only">Next</span>
@@ -77,7 +70,7 @@ const Carousel = () => {
             ref={carousel}
             className="carousel-container relative flex gap-0 md:gap-1 overflow-hidden scroll-smooth snap-x snap-mandatory touch-pan-x z-0"
           >
-            {data.resources.map((resource, index) => (
+            {resources.map((resource, index) => (
               <div
                 key={index}
                 className="carousel-item flex-shrink-0 w-full md:w-1/2 lg:w-1/4 text-center h-94 snap-start relative"
@@ -85,10 +78,10 @@ const Carousel = () => {
                 <a
                   href={resource.link}
                   className="h-full w-full aspect-square block bg-origin-padding bg-left-top bg-cover bg-no-repeat z-0"
-                  style={{ backgroundImage: `url(${resource.imageUrl || ''})` }}
+                  style={{ backgroundImage: `url(${resource.imageUrl})` }}
                 >
                   <img
-                    src={resource.imageUrl || ''}
+                    src={resource.imageUrl}
                     alt={resource.title}
                     className="w-full aspect-square hidden"
                   />

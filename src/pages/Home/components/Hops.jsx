@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 // import Fade from 'react-reveal/Fade'
 
-const GreenHop = () => <img src="src/assets/Home/greenhops.png" alt="Green Hop" className="h-40 w-28" />;
-const WhiteHop = () => <img src="src/assets/Home/whitehops.png" alt="White Hop" className="h-40 w-28 animate-bounce" />;
-const GreenHop2 = () => <img src="src/assets/Home/greenhops.png" alt="Green Hop" className="h-40 w-28" />;
-const WhiteHop2 = () => <img src="src/assets/Home/whitehops.png" alt="White Hop" className="h-40 w-28 animate-bounce" />;
-const GreenHop3 = () => <img src="src/assets/Home/greenhops.png" alt="Green Hop" className="h-40 w-28" />;
-const WhiteHop3 = () => <img src="src/assets/Home/whitehops.png" alt="White Hop" className="h-40 w-28 animate-bounce" />;
+const GreenHop = () => <img src="/greenhops.png" alt="Green Hop" className="h-40 w-28" />;
+const WhiteHop = () => <img src="/whitehops.png" alt="White Hop" className="h-40 w-28 animate-bounce" />;
+const GreenHop2 = () => <img src="/greenhops.png" alt="Green Hop" className="h-40 w-28" />;
+const WhiteHop2 = () => <img src="/whitehops.png" alt="White Hop" className="h-40 w-28 animate-bounce" />;
+const GreenHop3 = () => <img src="/greenhops.png" alt="Green Hop" className="h-40 w-28" />;
+const WhiteHop3 = () => <img src="/whitehops.png" alt="White Hop" className="h-40 w-28 animate-bounce" />;
 
 const Hops = () => {
   const [color, setColor] = useState(false);

@@ -14,7 +14,7 @@ const Navbar = () => {
     return (
       <section className='bg-black'>
         <nav className="font-Roboto flex justify-between siteContainer">
-            <a href="#" className='font-Logo text-white text-4xl pt-8 pb-8 pr-5'>Local Buzz Brewing</a>
+            <NavLink className='font-Logo text-white text-4xl pt-8 pb-8 pr-5' to='/'>Local Buzz Brewing</NavLink>
 
             <button onClick={handleNav} className='z-50 text-white md:max-xl:hidden lg:hidden xl:hidden 2xl:hidden'>
                 {!nav ? <AiOutlineMenu size={40} /> : <AiOutlineClose size={40} />}

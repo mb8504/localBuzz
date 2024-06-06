@@ -21,7 +21,7 @@ function Contact() {
                     </ul>
                 </div>
                 <div className='md:w-auto'>
-                    <img className='w-full h-auto md:max-w-xs lg:max-w-sm' src="src/assets/Contact/contact.png" alt="Cheers" />
+                    <img className='w-full h-auto md:max-w-xs lg:max-w-sm' src="/contact.png" alt="Cheers" />
                 </div>
             </div>
         </section>
