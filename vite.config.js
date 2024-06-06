@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "https://mb8504.github.io/",
+  base: "/localBuzz/",
   plugins: [react()],
   server: {
     port: 3000,
